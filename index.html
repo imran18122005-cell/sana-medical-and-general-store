@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>💊 sana medical and general store</h1>
+    <p>Your trusted online medicine store</p>
+</header>
+
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Medicines</a>
+    <a href="#cart">Cart</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<section id="home" class="hero">
+    <h2>Welcome to sana medical and general store</h2>
+    <p>Order medicines easily from your home</p>
+
+    <input 
+    type="text" 
+    id="search"
+    placeholder="Search medicines..."
+    onkeyup="searchMedicine()">
+</section>
+
+
+<section class="categories">
+
+<h2>Medicine Categories</h2>
+
+<div class="category-box">
+    <button onclick="filterCategory('Pain Relief')">Pain Relief</button>
+    <button onclick="filterCategory('Cold')">Cold & Flu</button>
+    <button onclick="filterCategory('Vitamins')">Vitamins</button>
+    <button onclick="filterCategory('Diabetes')">Diabetes</button>
+    <button onclick="filterCategory('All')">All</button>
+</div>
+
+</section>
+
+
+<section id="products">
+
+<h2>Available Medicines</h2>
+
+<div id="productContainer" class="products"></div>
+
+</section>
+
+
+<section id="cart">
+
+<h2>🛒 Your Cart</h2>
+
+<div id="cartItems"></div>
+
+<h3>Total: ₹<span id="total">0</span></h3>
+
+</section>
+
+
+<section class="order">
+
+<h2>Order Form</h2>
+
+<input id="customerName" placeholder="Your Name">
+
+<input id="phone" placeholder="Phone Number">
+
+<textarea id="address" placeholder="Delivery Address"></textarea>
+
+
+<h3>Upload Prescription</h3>
+
+<input type="file" id="prescription">
+
+
+<button onclick="placeOrder()">
+Place Order
+</button>
+
+
+<button class="whatsapp" onclick="whatsappOrder()">
+Order on WhatsApp
+</button>
+
+
+</section>
+
+
+<section id="contact">
+
+<h2>Store Contact Details</h2>
+
+<p>🏥 sana medical and general store</p>
+
+<p>📍 Market Road, patancheru</p>
+
+<p>📞 +91 9399933820</p>
+
+<p>✉ sana medical.30@gmail.com</p>
+
+</section>
+
+
+<footer>
+<p>© 2026  sana medical and general store</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
